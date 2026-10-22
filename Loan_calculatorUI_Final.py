@@ -140,9 +140,10 @@ with g2:
                 df_schedule_summary,
                 x="Year",
                 y=["Principal", "Interest"],
-                title="Amortization by "+tenure_type,
+                # title="Amortization by "+tenure_type,
                 color_discrete_map=color_map_ammort,
                 )
+        st.subheader("Amortization by "+tenure_type)
         st.plotly_chart(fig_ammort, width="stretch")
         
     else:
@@ -150,9 +151,10 @@ with g2:
                 df_schedule,
                 x="Month",
                 y=["Principal", "Interest"],
-                title="Amortization by "+tenure_type,
+                # title="Amortization by "+tenure_type,
                 color_discrete_map=color_map_ammort,
                 )
+        st.subheader("Amortization by "+tenure_type)
         st.plotly_chart(fig_ammort, width="stretch")
         
 
