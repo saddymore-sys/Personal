@@ -30,6 +30,7 @@ def init_db():
 
 
 
+
 def init_enquiry_db():
     """Creates the enquiry table if it doesn't exist."""
     conn = sqlite3.connect(DB_ENQUIRY)
